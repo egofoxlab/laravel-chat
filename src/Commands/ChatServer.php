@@ -8,7 +8,7 @@
 
 namespace Egofoxlab\LaravelChat\Commands;
 
-use Egofoxlab\Chat\Classes\Socket\ChatSocket;
+use Egofoxlab\LaravelChat\Classes\Socket\ChatSocket;
 use Illuminate\Console\Command;
 use Ratchet\Http\HttpServer;
 use Ratchet\Server\IoServer;

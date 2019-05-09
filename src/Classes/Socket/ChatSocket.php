@@ -2,14 +2,14 @@
 
 namespace Egofoxlab\LaravelChat\Classes\Socket;
 
-use Egofoxlab\Chat\Classes\Models\ChatModel;
-use Egofoxlab\Chat\Classes\Models\ChatUserModel;
-use Egofoxlab\Chat\Classes\Providers\ChatProvider;
-use Egofoxlab\Chat\Classes\Socket\Base\BaseSocket;
-use Egofoxlab\Chat\Classes\Struct\ChatRowStruct;
+use Egofoxlab\LaravelChat\Classes\Models\ChatModel;
+use Egofoxlab\LaravelChat\Classes\Models\ChatUserModel;
+use Egofoxlab\LaravelChat\Classes\Providers\ChatProvider;
+use Egofoxlab\LaravelChat\Classes\Socket\Base\BaseSocket;
+use Egofoxlab\LaravelChat\Classes\Struct\ChatRowStruct;
 use Log;
 use Ratchet\ConnectionInterface;
-use Egofoxlab\Chat\Classes\Providers\Util as EgoUtil;
+use Egofoxlab\LaravelChat\Classes\Providers\Util as EgoUtil;
 
 class ChatSocket extends BaseSocket {
 

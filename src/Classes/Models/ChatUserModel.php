@@ -8,10 +8,10 @@
 namespace Egofoxlab\LaravelChat\Classes\Models;
 
 use Carbon\Carbon;
-use Egofoxlab\Chat\Classes\Struct\ChatUserRowStruct;
+use Egofoxlab\LaravelChat\Classes\Struct\ChatUserRowStruct;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
-use Egofoxlab\Chat\Classes\Providers\Util as EgoUtil;
+use Egofoxlab\LaravelChat\Classes\Providers\Util as EgoUtil;
 
 /**
  * Class ChatUserModel

@@ -7,7 +7,7 @@
 
 namespace Egofoxlab\LaravelChat;
 
-use Egofoxlab\Chat\Commands\ChatServer;
+use Egofoxlab\LaravelChat\Commands\ChatServer;
 use Illuminate\Support\ServiceProvider;
 
 class ChatServiceProvider extends ServiceProvider {
@@ -34,6 +34,6 @@ class ChatServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function register() {
-		$this->app->make('Egofoxlab\Chat\ChatController');
+		$this->app->make('Egofoxlab\LaravelChat\ChatController');
 	}
 }

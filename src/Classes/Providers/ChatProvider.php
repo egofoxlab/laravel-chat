@@ -8,13 +8,13 @@
 namespace Egofoxlab\LaravelChat\Classes\Providers;
 
 use DB;
-use Egofoxlab\Chat\Classes\Models\ChatMessageModel;
-use Egofoxlab\Chat\Classes\Models\ChatModel;
-use Egofoxlab\Chat\Classes\Models\ChatUserModel;
-use Egofoxlab\Chat\Classes\Struct\ChatMessageRowStruct;
-use Egofoxlab\Chat\Classes\Struct\ChatRowStruct;
-use Egofoxlab\Chat\Classes\Struct\ChatUserRowStruct;
-use Egofoxlab\Chat\Classes\Providers\Util as EgoUtil;
+use Egofoxlab\LaravelChat\Classes\Models\ChatMessageModel;
+use Egofoxlab\LaravelChat\Classes\Models\ChatModel;
+use Egofoxlab\LaravelChat\Classes\Models\ChatUserModel;
+use Egofoxlab\LaravelChat\Classes\Struct\ChatMessageRowStruct;
+use Egofoxlab\LaravelChat\Classes\Struct\ChatRowStruct;
+use Egofoxlab\LaravelChat\Classes\Struct\ChatUserRowStruct;
+use Egofoxlab\LaravelChat\Classes\Providers\Util as EgoUtil;
 use http\Exception\RuntimeException;
 
 class ChatProvider {
