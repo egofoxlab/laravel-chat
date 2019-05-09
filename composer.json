@@ -7,7 +7,7 @@
         }
     ],
     "require": {
-        "php": ">= 7.0"
+        "php": ">=7"
     },
     "autoload": {
         "psr-4": {
@@ -20,5 +20,10 @@
                 "Egofoxlab\\LaravelChat\\ChatServiceProvider"
             ]
         }
-    }
+    },
+    "require-dev": {
+        "laravel/framework": "^5.5"
+    },
+    "prefer-stable": true
 }
+
