@@ -1,13 +1,24 @@
 {
-    "name": "egofoxlab/chat",
+    "name": "egofoxlab/laravel-chat",
     "authors": [
         {
             "name": "EGOFOXLAB",
             "email": "egofoxlab@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">= 7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Egofoxlab\\LaravelChat\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Egofoxlab\\LaravelChat\\ChatServiceProvider"
+            ]
+        }
     }
 }
