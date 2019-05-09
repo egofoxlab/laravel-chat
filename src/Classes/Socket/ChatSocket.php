@@ -1,6 +1,6 @@
 <?php
 
-namespace Egofoxlab\Chat\Classes\Socket;
+namespace Egofoxlab\LaravelChat\Classes\Socket;
 
 use Egofoxlab\Chat\Classes\Models\ChatModel;
 use Egofoxlab\Chat\Classes\Models\ChatUserModel;

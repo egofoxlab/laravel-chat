@@ -5,7 +5,7 @@
  * Copyright (c) 2019.
  */
 
-namespace Egofoxlab\Chat\Classes\Struct;
+namespace Egofoxlab\LaravelChat\Classes\Struct;
 
 class ChatUserRowStruct extends BaseStruct {
 

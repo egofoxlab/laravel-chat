@@ -1,6 +1,6 @@
 <?php
 
-namespace Egofoxlab\Chat\Classes\Socket\Base;
+namespace Egofoxlab\LaravelChat\Classes\Socket\Base;
 
 use Ratchet\ConnectionInterface;
 use Ratchet\MessageComponentInterface;

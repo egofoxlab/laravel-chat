@@ -5,7 +5,7 @@
  * Copyright (c) 2019.
  */
 
-namespace Egofoxlab\Chat;
+namespace Egofoxlab\LaravelChat;
 
 use Egofoxlab\Chat\Commands\ChatServer;
 use Illuminate\Support\ServiceProvider;

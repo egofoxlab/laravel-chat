@@ -5,7 +5,7 @@
  * Copyright (c) 2019.
  */
 
-namespace Egofoxlab\Chat\Classes\Providers;
+namespace Egofoxlab\LaravelChat\Classes\Providers;
 
 /**
  * Class Util

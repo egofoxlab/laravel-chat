@@ -6,7 +6,7 @@
  * Copyright (c) 2019.
  */
 
-namespace Egofoxlab\Chat\Commands;
+namespace Egofoxlab\LaravelChat\Commands;
 
 use Egofoxlab\Chat\Classes\Socket\ChatSocket;
 use Illuminate\Console\Command;

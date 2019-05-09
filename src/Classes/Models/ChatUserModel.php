@@ -5,7 +5,7 @@
  * Copyright (c) 2019.
  */
 
-namespace Egofoxlab\Chat\Classes\Models;
+namespace Egofoxlab\LaravelChat\Classes\Models;
 
 use Carbon\Carbon;
 use Egofoxlab\Chat\Classes\Struct\ChatUserRowStruct;

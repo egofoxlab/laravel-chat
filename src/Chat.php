@@ -1,6 +1,6 @@
 <?php
 
-namespace Egofoxlab\Chat;
+namespace Egofoxlab\LaravelChat;
 
 class Chat extends \Eloquent {
 
