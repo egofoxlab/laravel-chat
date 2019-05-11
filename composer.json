@@ -6,8 +6,10 @@
             "email": "egofoxlab@gmail.com"
         }
     ],
+    "license": "MIT",
     "require": {
-        "php": ">=7"
+        "php": ">=7",
+        "laravel/framework": "^5.5"
     },
     "autoload": {
         "psr-4": {
@@ -22,6 +24,7 @@
         }
     },
     "require-dev": {
+        "php": ">=7",
         "laravel/framework": "^5.5"
     },
     "prefer-stable": true
