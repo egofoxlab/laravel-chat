@@ -2,4 +2,4 @@
 
 ####Demo
 
-![][http://nfs.egofoxlab.com/laravel-chat/demo.gif]
+![](http://nfs.egofoxlab.com/laravel-chat/demo.gif)
