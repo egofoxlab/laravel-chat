@@ -1,5 +1,5 @@
-#EGOFOXLAB Chat
+# EGOFOXLAB Chat
 
-####Demo
+#### Demo
 
 ![](http://nfs.egofoxlab.com/laravel-chat/demo.gif)
