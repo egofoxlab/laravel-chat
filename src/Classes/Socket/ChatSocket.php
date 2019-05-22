@@ -11,6 +11,14 @@ use Log;
 use Ratchet\ConnectionInterface;
 use Egofoxlab\LaravelChat\Classes\Providers\Util as EgoUtil;
 
+/**
+ * Class ChatSocket handle incoming connection, close, messages, errors.
+ *
+ * You can use this class more like example chat working. You can override it based on it with using provided with
+ * this library models, providers for chat.
+ *
+ * @package Egofoxlab\LaravelChat\Classes\Socket
+ */
 class ChatSocket extends BaseSocket {
 
 	protected $clientList;
@@ -51,7 +59,8 @@ class ChatSocket extends BaseSocket {
 						'avatar' => null
 					],
 					'data' => [
-						'text' => $message->getMessage()
+						'text' => $message->getMessage(),
+						'date' => date('d.m.Y', strtotime($message->getDateCreate()))
 					]
 				];
 			}
@@ -66,6 +75,7 @@ class ChatSocket extends BaseSocket {
 			],
 			'data' => [
 				'text' => 'Welcome to EGO Chat demo!',
+				'date' => date('d.m.Y'),
 				'oldMessages' => $oldMessages
 			]
 		]));
@@ -121,6 +131,9 @@ class ChatSocket extends BaseSocket {
 			//  Save message in DB
 			$chatProvider->newMessage($chat->getId(), $userId, EgoUtil::getArrItem($messageData, 'data.text'));
 		}
+
+		//  Modify message
+		$messageData['data']['date'] = date('d.m.Y');
 
 		foreach ($this->clientList as $item) {
 			/** @var ConnectionInterface $client */

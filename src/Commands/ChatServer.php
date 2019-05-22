@@ -30,6 +30,13 @@ class ChatServer extends Command {
 	protected $description = 'Run chat server.';
 
 	/**
+	 * Port for chat
+	 *
+	 * @var int
+	 */
+	protected $port = 7000;
+
+	/**
 	 * Create a new command instance.
 	 *
 	 * @return void
@@ -46,7 +53,7 @@ class ChatServer extends Command {
 	 * @throws \UnexpectedValueException
 	 */
 	public function handle() {
-		$this->info("Start `Chat Server`...");
+		$this->info("Start `Chat Server` on port {$this->port}...");
 
 		$server = IoServer::factory(
 			new HttpServer(
@@ -54,7 +61,7 @@ class ChatServer extends Command {
 					new ChatSocket()
 				)
 			),
-			7000
+			$this->port
 		);
 
 		$server->run();
